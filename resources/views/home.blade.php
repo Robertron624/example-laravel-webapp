@@ -75,6 +75,9 @@
                             <p>
                                 {{ $post['created_at'] }}
                             </p>
+                            <p>
+                                By '{{ $post->author->name }}'
+                            </p>
                         </div>
                     @endforeach
                 </div>
