@@ -96,10 +96,10 @@
                             </p>
                             <div class="post-modifiers" style="display: flex; gap: 2rem; align-items: center;">
                                 <a style="padding: 0.5rem 0.8rem;border-radius: 5px; text-decoration: none; color:  blueviolet; background: white; border: 1px solid salmon"
-                                    href="/edit/post/{{ $post->id }}">
+                                    href="/edit-post/{{ $post->id }}">
                                     Edit
                                 </a>
-                                <form style="margin:0;" action="/delete/post/{{$post->id}}" method="POST">
+                                <form style="margin:0;" action="/delete-post/{{$post->id}}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button style="padding: 0.5rem 0.8rem;border-radius: 5px; text-decoration: none; color:  blueviolet; background: white; border: 1px solid salmon">
